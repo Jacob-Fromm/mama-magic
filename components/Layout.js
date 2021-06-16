@@ -7,11 +7,11 @@ function Layout({ children }) {
   const handleMenu = () => setMenuOpen(!menuOpen);
   const handleOpen = () => setCartOpen(!cartOpen);
   return (
-    <div className="bg-white">
+    <div className="bg-bright-sun-DEFAULT">
       <header>
         <div className="container mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
-            <div className="hidden w-full text-gray-600 md:flex md:items-center">
+            <div className="hidden w-full text-white md:flex md:items-center">
               <svg
                 className="h-5 w-5"
                 viewBox="0 0 24 24"
@@ -31,15 +31,15 @@ function Layout({ children }) {
                   fill="currentColor"
                 />
               </svg>
-              <span className="mx-1 text-sm">NY</span>
+              <span className="mx-1 text-sm">IL</span>
             </div>
-            <div className="w-full text-gray-700 md:text-center text-2xl font-semibold">
-              Pulp Inc.
+            <div className="w-full text-white md:text-center text-2xl font-semibold">
+              Mama Magic
             </div>
             <div className="flex items-center justify-end w-full">
               <button
                 onClick={handleOpen}
-                className="text-gray-600 focus:outline-none mx-4 sm:mx-0"
+                className="text-white focus:outline-none mx-4 sm:mx-0"
               >
                 <svg
                   className="h-5 w-5"
@@ -58,7 +58,7 @@ function Layout({ children }) {
                 <button
                   onClick={handleMenu}
                   type="button"
-                  className="text-gray-600 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+                  className="text-white hover:text-white focus:outline-none focus:text-white-500"
                   aria-label="toggle menu"
                 >
                   <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current">
@@ -78,17 +78,17 @@ function Layout({ children }) {
           >
             <div className="flex flex-col sm:flex-row">
               <Link href="/">
-                <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0">
+                <a className="mt-3 text-white hover:underline sm:mx-3 sm:mt-0">
                   Home
                 </a>
               </Link>
               <Link href="/products">
-                <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0">
+                <a className="mt-3 text-white hover:underline sm:mx-3 sm:mt-0">
                   Shop
                 </a>
               </Link>
               <Link href="/about">
-                <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0">
+                <a className="mt-3 text-white hover:underline sm:mx-3 sm:mt-0">
                   About
                 </a>
               </Link>
@@ -97,7 +97,7 @@ function Layout({ children }) {
           <div className="relative mt-6 max-w-lg mx-auto">
             <span className="absolute inset-y-0 left-0 pl-3 flex items-center">
               <svg
-                className="h-5 w-5 text-gray-500"
+                className="h-5 w-5 text-white"
                 viewBox="0 0 24 24"
                 fill="none"
               >
@@ -124,15 +124,15 @@ function Layout({ children }) {
       <Cart cartOpen={cartOpen} handleOpen={handleOpen} />
       */}
       <main className="my-8">{children}</main>
-      <footer className="bg-gray-200">
+      <footer className="bg-amethyst-smoke-DEFAULT">
         <div className="container mx-auto px-6 py-3 flex justify-between items-center">
           <a
             href="#"
-            className="text-xl font-bold text-gray-500 hover:text-gray-400"
+            className="text-xl font-bold text-white hover:text-white"
           >
-            Pulp Inc.
+            Mama Magic
           </a>
-          <p className="py-2 text-gray-500 sm:py-0">All rights reserved</p>
+          <p className="py-2 text-white sm:py-0">All rights reserved</p>
         </div>
       </footer>
     </div>

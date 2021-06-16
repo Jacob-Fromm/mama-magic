@@ -1,11 +1,11 @@
 {
   "root": true,
   "api": {
-    "projectId": "placeholder",
-    "dataset": "placeholder"
+    "projectId": "ozykzr8b",
+    "dataset": "production"
   },
   "project": {
-    "name": "Next.JS E-commerce example",
+    "name": "Mama Magic",
     "basePath": "/studio"
   },
   "plugins": [
