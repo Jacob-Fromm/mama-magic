@@ -2,7 +2,7 @@ import Error from "next/error";
 import { useRouter } from "next/router";
 import { getClient, usePreviewSubscription } from "../utils/sanity";
 import ProductsPage from "../components/ProductsPage";
-import Image from 'next/image'
+import Hero from '../components/Hero'
 
 const query = `//groq
   *[_type == "product" && defined(slug.current)]
@@ -22,12 +22,7 @@ function IndexPage(props) {
 
   return (
     <div className="my-8">
-      <Image 
-        src="/logo.png"
-        width={421}
-        height={297.5}
-        layout='intrinsic'
-      />
+      <Hero />
       <div className="mt-4">
         <ProductsPage products={products} />
       </div>
