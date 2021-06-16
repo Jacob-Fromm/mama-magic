@@ -14,6 +14,8 @@ export default function Logo() {
             <div className="flex-1 mx-0">
                 <Image 
                 src='/logo.png'
+                alt='Mama Magic logo'
+                priotity='true'
                 width={421}
                 height={297.5}
                 layout='responsive'
