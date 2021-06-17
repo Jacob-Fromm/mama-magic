@@ -6,7 +6,7 @@ function ProductCard({ _id, title, mainImage, slug, defaultProductVariant }) {
     <Link href={`/products/${slug.current}`}>
       <a className="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
         <div
-          className="flex items-end justify-end h-56 w-full bg-cover"
+          className="flex items-end justify-end h-56 w-full bg-cover hover:bg-white hover:shadow-lg hover:border-transparent ..."
           style={{
             backgroundImage: `url('${urlFor(mainImage)
               .auto("format")
