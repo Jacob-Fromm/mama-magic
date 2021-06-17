@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Logo() {
     return(
-        <div className="grid grid-cols-2 mx-20 justify-end items-center content-center">
+        <div className="grid grid-cols-2 mx-24 justify-end items-center content-center">
             <div className="flex flex-col ml-24">
             <div className='flex-1 mb-5'>
                 <h2 className="text-amethyst-smoke-DEFAULT font-bold">We want mamas to feel inspired by their own strength and connected to all the other mamas of the world. Early motherhood brings joyful moments, but also physical and emotional challenges. Through it all, we want to remind every mama just how full of magic she is.
