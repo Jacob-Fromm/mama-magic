@@ -14,7 +14,7 @@ export default function Logo() {
                 </h2>
             </div>
             </div>
-            <div className="flex-1 mx-0">
+            <div className="flex-1 mx-0 hover:animate-spin">
                 <Image 
                 src='/logo.png'
                 alt='Mama Magic logo'

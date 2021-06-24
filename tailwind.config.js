@@ -13,6 +13,8 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+     animation: ['responsive', 'motion-safe', 'motion-reduce']
+  },
   plugins: [],
 }
