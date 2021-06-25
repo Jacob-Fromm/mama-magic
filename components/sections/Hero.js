@@ -7,10 +7,21 @@ function Hero(props) {
 
   return (
     <div>
-      <div className="container mx-auto px-6 mt-4">
-        <div className="md:flex md:items-center">
+      <div className="container mx-auto px-6 mt-4 py-auto">
+        <div className="md:flex md:items-center md:justify-start">
+          <div className="container md:flex flex-row w-full h-64 md:w-1/2 lg:h-96">
+            <img
+              className="h-full w-full px-auto rounded-md object-cover max-w-lg mx-auto my-10"
+              src={urlFor(backgroundImage)
+                .auto("format")
+                .width(1051)
+                .fit("crop")
+                .quality(80)}
+              alt={backgroundImage.alt}
+            />
+          </div>
           <div className="w-full max-w-lg mx-auto mt-5 md:ml-8 md:mt-0 md:w-1/2">
-            <h3 className="text-gray-700 uppercase text-lg">{heading}</h3>
+            <h3 className="text-gray-700 uppercase bold text-xl">{heading}</h3>
             {tagline && <PortableText blocks={tagline} />}
             {ctas && (
               <div>
@@ -19,17 +30,6 @@ function Hero(props) {
                 ))}
               </div>
             )}
-          </div>
-          <div className="w-full h-64 md:w-1/2 lg:h-96">
-            <img
-              className="h-full w-full rounded-md object-cover max-w-lg mx-auto"
-              src={urlFor(backgroundImage)
-                .auto("format")
-                .width(1051)
-                .fit("crop")
-                .quality(80)}
-              alt={backgroundImage.alt}
-            />
           </div>
         </div>
       </div>

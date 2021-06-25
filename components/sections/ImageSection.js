@@ -21,9 +21,11 @@ function ImageSection(props) {
                 alt={heading}
               />
               <figcaption>
-                <div>
+                <br></br>
+                <div className="image-text">
                   <div>{label}</div>
-                  <h2>{heading}</h2>
+                  <h2><em>{heading}</em></h2>
+                    <br></br>
                   {text && <PortableText blocks={text} />}
                   {cta && cta.route && <Cta {...cta} />}
                 </div>
